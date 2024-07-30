@@ -1,0 +1,34 @@
+#include<stdio.h> //selection
+int main()
+{
+    int length;
+    printf("length of array");
+    scanf("%d",&length);
+    int arr[length];
+    for(int i=0;i<length;i++)
+    {
+        printf("arr[%d]=",i);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<length;i++)
+    {
+       int min=i;
+       for(int j=i+1;j<length;j++)
+       {
+        if(arr[min]>arr[j])
+        {
+            min=j;
+        }
+        if(min!=i)
+        {
+            swap(arr[min,arr[i]]);
+        }
+       }
+    }
+    for(int i=0;i<length;i++)
+    {
+        printf("arr[%d]=%d \n" i,arr[i]);
+    }
+    }
+
+}

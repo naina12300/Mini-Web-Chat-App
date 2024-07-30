@@ -1,0 +1,23 @@
+import java.util.scanner;
+class secondlargestelement
+{
+    static void input(int n)
+    {
+        Scanner sc=new Scanner(System.in)
+        System.out.println("enter the length of array")
+        int  n=sc.nextInt();
+        int a[]=new int[n];
+        System.out.println("enter elements";)
+        for(int i=0;i<n;i++)
+        {
+            int a[i]=sc.nextInt();
+        }
+        Array.sort[a];
+        System.out.println("2 largest no is",+a[n-2]);
+    }
+    public static void main(Strin args[])
+    {
+        secondlargestelement bb=new secondlargestelement();
+        bb.input();
+    }
+}

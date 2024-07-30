@@ -1,0 +1,46 @@
+#include<stdi0.h> //insertion
+#include<stdio.h>
+
+int main()
+{
+	int length;
+	//int shift=0;
+	//int campasion=0;
+	
+	printf("length of array");
+	scanf("%d",&length);
+	int arr[length];
+	for(int i=0;i<length;i++)
+	{
+			printf("arr[%d]= ",i);
+			scanf("%d",&arr[i]);
+	}
+	 
+
+	for(int i=1;i<length;i++)
+	{
+		int key=arr[i];
+		int j=i-1;
+		while(j>=0&&arr[j]>key)
+		{
+			arr[j+1]=arr[j];
+			j=j-1;
+			//campasion++;
+			//shift++;
+			
+		}
+		arr[j+1]=key;
+
+	}
+	
+
+	
+	for(int i=0;i<length;i++)
+	{
+		
+		printf("arr[%d]=%d ",i,arr[i]);
+		
+	}
+
+
+}
